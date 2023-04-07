@@ -39,22 +39,6 @@ function getOriginalFunctionFromString(fn) {
   return originalFunction;
 }
 
-function getReturnValues(fn, ...args) {
-  const originalFunction = getOriginalFunction(fn);
-  if(originalFunction) {
-    return originalFunction.apply(null, args);
-  }
-  return null;
-}
-
-function getReturnValuesFromString(fn, ...args) {
-  const originalFunction = getOriginalFunctionFromString(fn);
-  if(originalFunction) {
-    return originalFunction.apply(null, args);
-  }
-  return null;
-}
-
 function getOriginalProtypeMethod(obj, method) {
   const originalFunction = Object.getPrototypeOf(obj.prototype)[method];
   return originalFunction;
@@ -66,7 +50,5 @@ module.exports = {
   isNativeObject,
   getOriginalFunction,
   getOriginalFunctionFromString,
-  getReturnValues,
-  getReturnValuesFromString,
   getOriginalProtypeMethod
 }
