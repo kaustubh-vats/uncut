@@ -1,0 +1,28 @@
+{
+  "name": "uncut",
+  "version": "1.0.1",
+  "description": "Helps to identify the overridden javascript methods and find out the correct one.",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpublish": "node postpublish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustubh-vats/uncut.git"
+  },
+  "keywords": [
+    "overridden",
+    "function",
+    "original-implementation",
+    "javascript-native"
+  ],
+  "author": "Kaustubh Vats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaustubh-vats/uncut/issues"
+  },
+  "homepage": "https://github.com/kaustubh-vats/uncut#readme"
+}
